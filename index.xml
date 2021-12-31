@@ -6,7 +6,112 @@
         <description>Recent content on Coding World Blog - CDW Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 29 Dec 2021 16:48:50 +0800</lastBuildDate><atom:link href="https://cdwblog.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 30 Dec 2021 12:48:38 +0800</lastBuildDate><atom:link href="https://cdwblog.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>QR Code Generator</title>
+        <link>https://cdwblog.github.io/p/qr-code-generator/</link>
+        <pubDate>Thu, 30 Dec 2021 12:48:38 +0800</pubDate>
+        
+        <guid>https://cdwblog.github.io/p/qr-code-generator/</guid>
+        <description>&lt;img src="https://cdwblog.github.io/post/cover002.png" alt="Featured image of post QR Code Generator" /&gt;&lt;p&gt;Hello readers, today in this blog you will learn how to create a qr code generator yourself using the html,css (optional) and javascript.&lt;/p&gt;
+&lt;p&gt;Now, let&amp;rsquo;s start the tutorial.First,you need to create a html file and this is the html code needed.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;form onsubmit=&amp;quot;generate();return false;&amp;quot;&amp;gt;
+   &amp;lt;div class=&amp;quot;input&amp;quot;&amp;gt;
+      &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;qr&amp;quot; name=&amp;quot;&amp;quot; placeholder=&amp;quot;Enter a values&amp;quot;&amp;gt;
+   &amp;lt;/div&amp;gt;
+&amp;lt;/form&amp;gt;
+   &amp;lt;div id=&amp;quot;qrResult&amp;quot; style=&amp;quot;height: 100px;width: 100px&amp;quot; class=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;br /&amp;gt;
+&amp;lt;br /&amp;gt;
+      &amp;lt;button type=&amp;quot;submit&amp;quot; onclick=&amp;quot;generate()&amp;quot; class=&amp;quot;btn&amp;quot;&amp;gt;Generate&amp;lt;/button&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Secondly, add this js code in the ** html ** extension file also.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+   var qrcode=new QRCode(document.getElementById(&#39;qrResult&#39;),{
+   width:100,height:100
+}); 
+
+function generate(){
+var message=document.getElementById(&#39;qr&#39;);
+if(!message.value){
+alert(&amp;quot;Please enter a values! &amp;quot;);
+message.focus();
+return;
+}
+qrcode.makeCode(message.value);
+}
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;These code is use to judge is the user have enter a value, if it is not any value entered, an alert will called.&lt;/p&gt;
+&lt;p&gt;Now,we can add some css to beautify the website (you can skip this step if you don&amp;rsquo;t mind)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    *{
+   box-sizing: border-box;
+   padding: 0px;
+}
+
+body{
+   text-align: center;
+}
+
+header{
+   font-size: 28px;
+}
+
+div.result{
+   padding-top: 20px;
+   padding-left: 120px;
+}
+
+input{
+   width: 280px;
+   border: none;
+   outline: none;
+   padding-bottom: 2px;
+   padding-left:3px;
+}
+
+div.input{
+   width: 280px;
+   border-bottom: 1px solid #9DA0C0;
+   margin-left: 40px;
+}
+
+.btn{
+   width: 80px;
+   height: 40px;
+   background: none;
+   color: #5765FF;
+   border: 1px solid #5765FF;
+   border-radius: 5px;
+}
+
+.btn:hover{
+   transition: 0.8s;
+   background: #5765FF;
+   color: #fff;
+}
+
+footer{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background: #5765FF;
+   color: #fff;
+   width: 100%;
+   height: 40px;
+   padding-top: 11px;
+}
+
+#icon{
+   padding-left: 5px;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now we are going to add the core of generator, js extension file. For this js file you need to download at below.&lt;/p&gt;
+&lt;p&gt;Download js file :
+After downloaded, import the file to your project folder and use &lt;code&gt;&amp;lt;script scr=&amp;quot;qrcode.js&amp;quot;&amp;gt;&lt;/code&gt; in the html to link the js file.&lt;/p&gt;
+&lt;p&gt;If it didn&amp;rsquo;t went wrong,the qr code generator is done and should be work now.&lt;/p&gt;
+&lt;p&gt;That is all the tutorial today, if you are facing any problem, contact me using the comment below or go to &lt;a class=&#34;link&#34; href=&#34;https://cdwblog.github.io/p/about-us/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;contact us&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>About Us</title>
         <link>https://cdwblog.github.io/p/about-us/</link>
         <pubDate>Wed, 29 Dec 2021 16:48:50 +0800</pubDate>
