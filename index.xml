@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Coding World Blog - CDW Blog</title>
+        <link>https://cdwblog.github.io/</link>
+        <description>Recent content on Coding World Blog - CDW Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 29 Dec 2021 16:48:50 +0800</lastBuildDate><atom:link href="https://cdwblog.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About Us</title>
+        <link>https://cdwblog.github.io/p/about-us/</link>
+        <pubDate>Wed, 29 Dec 2021 16:48:50 +0800</pubDate>
+        
+        <guid>https://cdwblog.github.io/p/about-us/</guid>
+        <description>&lt;img src="https://cdwblog.github.io/post/cover.png" alt="Featured image of post About Us" /&gt;&lt;h2 id=&#34;about-us&#34;&gt;About Us&lt;/h2&gt;
+&lt;p&gt;Hello everyone, Welcome to The Coding World Blog (CDW Blog).&lt;/p&gt;
+&lt;p&gt;Coding World Blog is a blog where we will post the articles about the fronted design such as HTML, CSS and JavaScript design. We will also posting some tutorial article about web development, useful tool and etc. In this blog, all the design will be open source and I will sharing the source code directly in the posts.&lt;/p&gt;
+&lt;p&gt;If you have any problem when reading post in our blog, you can contact us by :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Email : &lt;a class=&#34;link&#34; href=&#34;mailto:codingworld35@gmail.com&#34; &gt;codingworld35@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Facebook : &lt;a class=&#34;link&#34; href=&#34;https://facebook.com/cdwteam&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://facebook.com/cdwteam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;GitHub : &lt;a class=&#34;link&#34; href=&#34;https://github.com/cdwblog&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/cdwblog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

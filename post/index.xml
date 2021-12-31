@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Coding World Blog - CDW Blog</title>
+    <link>https://cdwblog.github.io/post/</link>
+    <description>Recent content in Posts on Coding World Blog - CDW Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 Dec 2021 16:48:50 +0800</lastBuildDate><atom:link href="https://cdwblog.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Us</title>
+      <link>https://cdwblog.github.io/p/about-us/</link>
+      <pubDate>Wed, 29 Dec 2021 16:48:50 +0800</pubDate>
+      
+      <guid>https://cdwblog.github.io/p/about-us/</guid>
+      <description>About Us Hello everyone, Welcome to The Coding World Blog (CDW Blog).
+Coding World Blog is a blog where we will post the articles about the fronted design such as HTML, CSS and JavaScript design. We will also posting some tutorial article about web development, useful tool and etc. In this blog, all the design will be open source and I will sharing the source code directly in the posts.</description>
+    </item>
+    
+  </channel>
+</rss>
