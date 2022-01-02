@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cdwteam/icons@v1.7.2/font/bootstrap-icons.css" type="text/css" media="all" />
+   <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+   <title>Practice Project (smart watch)</title>
+</head>
+<body>
+   <div class="header">
+      <p class="brand">Brand Name</p>
+      <div class="menu">
+         <ul>
+            <a href="">
+               <li>Home</li>
+            </a>
+            <a href="">
+               <li>Products</li>
+            </a>
+            <a href="">
+               <li>Contact</li>
+            </a>
+            <a href="">
+               <li>About</li>
+            </a>
+         </ul>
+      </div>
+   </div>
+   <div class="mobile-menu">
+      <ul>
+            <a href="">
+               <li>Home</li>
+            </a>
+            <a href="">
+               <li>Products</li>
+            </a>
+            <a href="">
+               <li>Contact</li>
+            </a>
+            <a href="">
+               <li>About</li>
+            </a>
+         </ul>
+   </div>
+   <i class="bi-list"></i>
+   <input type="checkbox" class="btn" onclick="mobilenav()"/>
+   <div class="main">
+      <div class="text">
+      <p class="title">XIAOMI SMART WATCH GTS</p>
+      <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis magnam molestias in reiciendis eligendi fuga debitis doloribus inventore delectus culpa est sunt mollitia repellendus illum, aperiam blanditiis placeat autem necessitatibus, perferendis rerum. Suscipit, atque, fugit!</p>
+      <button class="buynow">Buy Now</button>
+      <button class="findmore">Find More</button>
+      </div>
+   </div>
+   <div class="function">
+     
+      <div class="circle-container">
+      <div class="circle">
+         <i class="bi-activity"></i>
+      </div>
+      <p>Screening Heart Rate</p>
+      </div>
+      
+      <div class="circle-container">
+      <div class="circle">
+         <i class="bi-battery-charging"></i>
+      </div>
+      <p>Long battery life</p>
+      </div>
+       
+      <div class="circle-container">
+      <div class="circle">
+         <i class="bi-water"></i>
+      </div>
+      <p>Waterproof</p>
+      </div>
+      
+      <div class="circle-container">
+      <div class="circle">
+         <i class="bi-brightness-high"></i>
+      </div>
+      <p>Real Time Whether</p>
+      </div>
+       <img src="./imgs/flat.png" alt="" />
+   </div>
+   
+   
+   
+   
+   <div class="description">
+         <h2>Ours Collections</h2>
+      <div class="products-card first">
+         <div class="card">
+            <div class="product-img">
+               <img src="./imgs/2.png"/>
+            </div>
+            <div class="product-detail">
+               <p>Product Name</p>
+               <p>69$</p>
+               <button>Buy Now</button>
+            </div>
+         </div>
+         
+         <div class="card">
+            <div class="product-img">
+               <img src="./imgs/3.png" alt="" />
+            </div>
+            <div class="product-detail">
+               <p>Product Name</p>
+               <p>59$</p>
+               <button>Buy Now</button>
+            </div>
+         </div>
+         
+         <div class="card">
+            <div class="product-img">
+               <img src="./imgs/1.png"/>
+            </div>
+            <div class="product-detail">
+               <p>Product Name</p>
+               <p>99$</p>
+               <button>Buy Now</button>
+            </div>
+         </div>
+      </div>
+   </div>
+<div class="demo">
+   <h2>Product Official Video</h2>
+   <div class="tv">
+      <video autoplay="" loop="" style="background-image:url(./imgs/tv.png;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover" width="530px">
+         <source src="demo.mp4" data-wf-ignore="true">
+         </video>
+     </video>
+   </div>
+</div>
+<div class="footer">
+   <div class="section">
+      <p class="section-title">Product</p>
+      <p style="font-size: 8px">&copy; example.com 2022 <br>
+      All right reserved. <br>
+      </p>
+   </div>
+   <div class="section">
+      <p class="section-title">Get In Touch</p>
+      <ul>
+         <li>Contact Us</li>
+         <li>Contact Sales</li>
+         <li>Affiliates</li>
+      </ul>
+   </div>
+   <div class="section">
+      <p class="section-title">Support</p>
+      <ul>
+         <li>Help Center</li>
+         <li>Community</li>
+         <li>Request a Demo</li>
+         <li>Terms of Service</li>
+         <li>Security</li>
+         <li>Privacy Policy</li>
+      </ul>
+   </div>
+</div>
+<script type="text/javascript" charset="utf-8">
+   function mobilenav(){
+      const menu = document.querySelector('.mobile-menu');
+      var checkBox = document.querySelector(".btn");
+      if (checkBox.checked == true){
+    menu.style.right = "0px";
+  } else {
+    menu.style.right = "-155px";
+  }
+   }
+</script>
+
+
+</body>
+</html>

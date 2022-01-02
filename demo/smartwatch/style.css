@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Nunito', sans-serif;
+}
+div.header{
+   width: 100%;
+   height: 45px;
+   background: rgba(0, 0, 0, 0.3);
+   position: fixed;
+   top: 0;
+   left: 0;
+   color: #FFF;
+}
+p.brand{
+   font-size: 230%;
+   font-weight: bold;
+   padding-left: 25px;
+}
+div.menu{
+   position: fixed;
+   right: 0;
+   top: 0;
+   background: rgba(0, 0, 0, 0.3);
+}
+.menu ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   height: 45px;
+   background: none;
+}
+.menu ul li{
+   list-style-type: none;
+   width: 150px;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: none;
+}
+.menu ul li:hover{
+   background: rgba(0, 0, 0, 0.5)
+}
+a{
+   height: 45px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   text-decoration: none;
+   color: #FFF;
+}
+div.text{
+   position: absolute;
+   top: 110px;
+   left: 25px;
+   color: #FFF;
+   font-weight: bold;
+   width: 50%;
+   text-align: left;
+}
+p.title{
+   font-size: 54px;
+   color: #937A28;
+}
+p.subtitle{
+   padding-top: 5px;
+   font-size: 12px;
+   text-align: justify;
+   width: 90%;
+}
+
+div.footer{
+   width: 100%;
+   background: #3E4345;
+   color: #8C9194;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+}
+.section{
+   width: 20%;
+   height: 180px;
+   margin: 15px;
+   padding-left: 15px;
+}
+.section-title{
+   color: #FFF;
+   font-size: 26px;
+   font-weight: bold;
+}
+
+@media only screen and (max-width: 768px){
+   i.bi-list{
+      color: #fff;
+      position: fixed;
+      top: 5px;
+      right: 5px;
+      font-size: 28px; 
+   }
+   input.btn{
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 9;
+      opacity: 0;
+   }
+   div.mobile-menu{
+      position: fixed;
+      top: 45px;
+      right: -150px;
+      transition: 0.5s;
+   }
+   div.mobile-menu ul,div.mobile-menu li{
+      width: 150px;
+      background: #FFF;
+      color: #565656;
+      text-align: center;
+   }
+   div.mobile-menu li:hover, div.mobile-menu a:hover{
+      background: #CBCBCB;
+   }
+   li{
+      list-style-type: none;
+   }
+   div.header{
+      background: #000;
+      width: 100%;
+   }
+   p.brand{
+      padding: 15px;
+      font-size: 18px;
+   }
+   div.menu{
+      display: none;
+   }
+   div.main{
+      margin-top: 45px;
+   }
+   div.text{
+      top: 50px;
+      left: 15px;
+      width: 55%;
+   }
+   p.title{
+      font-size: 24px;
+   }
+   p.subtitle{
+      font-size: 8px;
+   }
+div.main{
+   background: url(main.png) no-repeat;
+   background-size: 100%;
+   width: 100%;
+   height: 250px;
+}
+button.buynow{
+   width: 75px;
+   height: 35px;
+   font-size: 8px;
+   background: #9D2829;
+   border: none;
+   border-radius: 20px;
+   color: #FFF;
+   font-weight: bold;
+   margin-top: 5px;
+}
+.findmore{
+   margin-top: 5px;
+   margin-left: 5px;
+   width: 75px;
+   height: 35px;
+   font-size: 8px;
+   background: none;
+   border: 2px solid #9D2829;
+   border-radius: 20px;
+   color: #FFF;
+   font-weight: bold;
+}
+div.function{
+   width: 100%;
+   height: 310px;
+   position: relative;
+   z-index: -99;
+}
+div.function img{
+   width: 100%;
+   position: absolute;
+}
+div.circle-container{
+   width: 80px;
+   height: 150px;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   z-index: 999;
+}
+div.circle-container p{
+   text-align: center;
+   font-weight: bold;
+   padding-top: 15px;
+}
+div.circle{
+   width: 50px;
+   height: 50px;
+   border: 1px dotted;
+   border-radius: 50%;
+}
+.circle i{
+   padding-right: 28px;
+   padding-top: 10px;
+   font-size: 24px;
+}
+div.function div.circle-container:first-child{
+   top: 0px;
+   left: 20px;
+}
+div.function div.circle-container:nth-child(2){
+   top: 160px;
+   left: 20px;
+}
+div.function div.circle-container:nth-child(3){
+   top: 0px;
+   right: 20px;
+}
+div.function div.circle-container:nth-child(4){
+   top: 160px;
+   right: 20px;
+}
+div.description{
+   background: #F5F5F5;
+   height: 950px;
+   text-align: center;
+   overflow: hidden;
+}
+h2{
+   font-size: 24px;
+   padding: 5px;
+}
+i{
+   font-size: 45px;
+   position: absolute;
+   right: 0px;
+}
+div.products-card{
+   width: 90%;
+   margin-left: 5%;
+   height: 350px;
+}
+div.card{
+   width: 65%;
+   margin-left: 17.5%;
+   margin-bottom: 5px;
+   margin-top: 15px;
+   height: 280px;
+   color: #fff;
+   border: 3px solid #EBEBEB;
+   border-radius: 10px;
+   background: #FFF;
+   color: #000;
+}
+div.product-img{
+   width: 100%;
+   height: 80px;
+}
+div.product-img img{
+   width: 45%;
+   height: 100%;
+   padding-top: 5px;
+}
+.product-detail p{
+   font-size: 24px;
+   padding-top: 5px;
+   font-weight: bold;
+}
+.product-detail button{
+   margin-top: 15px;
+   height: 35px;
+   width: 95px;
+   background: #FF2121;
+   color: #FFF;
+   border: none;
+   border-radius: 15px;
+}
+div.demo{
+   width: 100%;
+   height: 320px;
+   background: #FFF;
+   text-align: center;
+}
+div.tv{
+   width: 70%;
+   margin-left: 15%;
+   height: 250px;
+   background: url(./imgs/tv.png) no-repeat;
+   background-size: 80%;
+   background-position: center;
+}
+video{
+   margin-top: 52px;
+   width: 195px;
+}
+.section{
+   width: 20%;
+   height: 80px;
+   margin: 5px;
+   padding-left: 15px;
+}
+.section-title{
+   color: #FFF;
+   font-size: 13px;
+   font-weight: bold;
+}
+.section ul{
+   font-size: 9px;
+}
+.footer{
+   height: 160px;
+}
+
+}
+
+
+@media only screen and (min-width: 768px){
+div.main{
+   background: url(main.png) no-repeat;
+   background-size: 100%;
+   width: 100%;
+   height: 550px;
+}
+div.mobile-menu{
+   display: none;
+}
+button.buynow{
+   width: 40%;
+   height: 55px;
+   font-size: 120%;
+   background: #9D2829;
+   border: none;
+   border-radius: 25px;
+   color: #FFF;
+   font-weight: bold;
+}
+.findmore{
+   margin-top: 45px;
+   margin-left: 25px;
+   width: 150px;
+   height: 55px;
+   font-size: 130%;
+   background: none;
+   border: 2px solid #9D2829;
+   border-radius: 25px;
+   color: #FFF;
+   font-weight: bold;
+}
+div.function{
+   width: 100%;
+   height: 580px;
+   position: relative;
+   z-index: -99;
+}
+div.circle-container{
+   width: 150px;
+   height: 160px;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+div.circle-container p{
+   text-align: center;
+   font-weight: bold;
+   padding-top: 15px;
+}
+div.circle{
+   width: 100px;
+   height: 100px;
+   border: 1px dotted;
+   border-radius: 50%;
+}
+.circle i{
+   padding-right: 43px;
+   padding-top: 10px;
+   font-size: 62px;
+}
+div.function div.circle-container:first-child{
+   top: 60px;
+   left: 120px;
+}
+div.function div.circle-container:nth-child(2){
+   top: 310px;
+   left: 120px;
+}
+div.function div.circle-container:nth-child(3){
+   top: 60px;
+   right: 120px;
+}
+div.function div.circle-container:nth-child(4){
+   top: 310px;
+   right: 120px;
+}
+div.description{
+   background: #F5F5F5;
+   height: 550px;
+   text-align: center;
+   overflow: hidden;
+}
+h2{
+   font-size: 50px;
+   padding: 25px;
+}
+i{
+   font-size: 45px;
+   position: absolute;
+   right: 0px;
+}
+div.products-card{
+   width: 90%;
+   margin-left: 5%;
+   height: 350px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+i.arrow{
+   padding-right: 20px;
+}
+div.card{
+   height: 350px;
+   width: 30%;
+   color: #fff;
+   margin: 0px 10px;
+   display: inline-table;
+   border: 3px solid #EBEBEB;
+   border-radius: 10px;
+   background: #FFF;
+   color: #000;
+}
+div.product-img{
+   width: 100%;
+   height: 200px;
+}
+div.product-img img{
+   width: 85%;
+   height: 100%;
+   padding-top: 5px;
+}
+.product-detail p{
+   font-size: 24px;
+   padding-top: 5px;
+   font-weight: bold;
+}
+.product-detail button{
+   margin-top: 15px;
+   height: 35px;
+   width: 95px;
+   background: #FF2121;
+   color: #FFF;
+   border: none;
+   border-radius: 15px;
+}
+div.demo{
+   width: 100%;
+   height: 600px;
+   background: #FFF;
+   text-align: center;
+}
+div.tv{
+   width: 70%;
+   margin-left: 15%;
+   height: 500px;
+   background: url(./imgs/tv.png) no-repeat;
+   background-size: 80%;
+   background-position: center;
+}
+video{
+   margin-top: 53px;
+}
+.footer{
+   height: 200px;
+}
+i.bi-list,.btn{
+   display: none;
+}
+}
+div.function img{
+   width: 100%
+}
