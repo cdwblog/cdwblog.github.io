@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title></title>
+   <script type="text/javascript" src="js/qrcode.js"></script>
+ <style>
+    *{
+   box-sizing: border-box;
+   padding: 0px;
+}
+
+body{
+   text-align: center;
+}
+
+header{
+   font-size: 28px;
+}
+
+div.result{
+   padding-top: 20px;
+   padding-left: 120px;
+}
+
+input{
+   width: 280px;
+   border: none;
+   outline: none;
+   padding-bottom: 2px;
+   padding-left:3px;
+}
+
+div.input{
+   width: 280px;
+   border-bottom: 1px solid #9DA0C0;
+   margin-left: 40px;
+}
+
+.btn{
+   width: 80px;
+   height: 40px;
+   background: none;
+   color: #5765FF;
+   border: 1px solid #5765FF;
+   border-radius: 5px;
+}
+
+.btn:hover{
+   transition: 0.8s;
+   background: #5765FF;
+   color: #fff;
+}
+
+footer{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background: #5765FF;
+   color: #fff;
+   width: 100%;
+   height: 40px;
+   padding-top: 11px;
+}
+
+#icon{
+   padding-left: 5px;
+}
+ </style>
+</head>
+<body>
+   <header>
+      <p><strong>qr code generator</strong></p>
+   </header>
+   <form onsubmit="generate();return false;">
+      <div class="input">
+      <input type="text" id="qr" name="" placeholder="Enter the values">
+      </div>
+   </form>
+      <div id="qrResult" style="height: 100px;width: 100px" class="result">
+
+      </div>
+      <script type="text/javascript">
+var qrcode=new QRCode(document.getElementById('qrResult'),{
+width:100,
+height:100
+}); 
+
+function generate(){
+var message=document.getElementById('qr');
+if(!message.value){
+alert("Please enter a value！");
+message.focus();
+return;
+}
+
+qrcode.makeCode(message.value);
+}
+
+</script>
+<br />
+<br />
+<br />
+<button type="submit" onclick="generate()" class="btn">generate</button>
+</body>
+</html>
