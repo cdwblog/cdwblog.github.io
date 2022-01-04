@@ -6,7 +6,139 @@
         <description>Recent content on Coding World Blog - CDW Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 30 Dec 2021 12:48:38 +0800</lastBuildDate><atom:link href="https://cdwblog.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 04 Jan 2022 12:48:38 +0800</lastBuildDate><atom:link href="https://cdwblog.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Working Calculator </title>
+        <link>https://cdwblog.github.io/p/working-calculator/</link>
+        <pubDate>Tue, 04 Jan 2022 12:48:38 +0800</pubDate>
+        
+        <guid>https://cdwblog.github.io/p/working-calculator/</guid>
+        <description>&lt;img src="https://cdwblog.github.io/post/cover001.png" alt="Featured image of post Working Calculator " /&gt;&lt;p&gt;Hello friends, today in this blog you will learn how to make a working calculator with using HTML and CSS only.&lt;/p&gt;
+&lt;p&gt;Now, let&amp;rsquo;s start the tutorial.Firstly, we need to create two empty file for the html and css. Copy and paste the following code&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+   &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+   &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;
+   &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot;&amp;gt;
+   &amp;lt;title&amp;gt;calculator&amp;lt;/title&amp;gt;
+   &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;style.css&amp;quot; type=&amp;quot;text/css&amp;quot; media=&amp;quot;all&amp;quot; /&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+   &amp;lt;div class=&amp;quot;wrapper&amp;quot;&amp;gt;
+      &amp;lt;form action=&amp;quot;&amp;quot; name=&amp;quot;forms&amp;quot;&amp;gt;
+      &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;answer&amp;quot; class=&amp;quot;output&amp;quot;/&amp;gt;
+    &amp;lt;div class=&amp;quot;btn-container&amp;quot;&amp;gt;
+     &amp;lt;div class=&amp;quot;btns&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;AC&amp;quot; onclick=&amp;quot;forms.answer.value = &#39;&#39;&amp;quot; class=&amp;quot;red&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;DEL&amp;quot; onclick=&amp;quot;forms.answer.value = forms.answer.value.substr(0 , forms.answer.value.length -1)&amp;quot; class=&amp;quot;red&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;%&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;%&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;/&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;/&#39;&amp;quot;&amp;gt;
+     &amp;lt;/div&amp;gt;
+     &amp;lt;div class=&amp;quot;btns&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;7&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;7&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;8&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;8&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;9&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;9&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;*&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;*&#39;&amp;quot;&amp;gt;
+     &amp;lt;/div&amp;gt;
+     &amp;lt;div class=&amp;quot;btns&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;4&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;4&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;5&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;5&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;6&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;6&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;-&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;-&#39;&amp;quot;&amp;gt;
+     &amp;lt;/div&amp;gt;
+     &amp;lt;div class=&amp;quot;btns&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;1&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;1&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;2&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;2&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;3&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;3&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;+&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;+&#39;&amp;quot;&amp;gt;
+     &amp;lt;/div&amp;gt;
+     &amp;lt;div class=&amp;quot;btns&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;0&amp;quot;  onclick=&amp;quot;forms.answer.value += &#39;0&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;00&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;00&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;.&amp;quot; onclick=&amp;quot;forms.answer.value += &#39;.&#39;&amp;quot;&amp;gt;
+       &amp;lt;input type=&amp;quot;button&amp;quot; value=&amp;quot;=&amp;quot; onclick=&amp;quot;forms.answer.value = eval(forms.answer.value)&amp;quot;&amp;gt;
+     &amp;lt;/div&amp;gt;
+   &amp;lt;/div&amp;gt;
+      &amp;lt;/form&amp;gt;
+   &amp;lt;/div&amp;gt;
+   &amp;lt;p&amp;gt;Download source code?&amp;lt;/p&amp;gt;
+   
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now, we go to the empty css file the paste the following code&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body{
+   background: #7436FF;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+div.wrapper{
+   background: #FFF;
+   width: 300px;
+   height: 480px;
+   margin-top: 30px;
+
+   border-radius: 15px;
+   position: relative;
+}
+.output{
+   position: absolute;
+   top: 35px;
+   margin-left: 5%;
+   width: 90%;
+   height: 85px;
+   font-size: 35px;
+   padding: 15px;
+   text-align: right;
+   color: #7436FF;
+   outline: none;
+   border: none;
+   border-radius: 10px;
+   background: #ECF0F3;
+   box-shadow: inset 5px 5px 10px #b1b4b6,
+            inset -5px -5px 10px #ffffff;
+}
+.btn-container{
+   width: 100%;
+   position: absolute;
+   bottom: 15px;
+   display: flex;
+   flex-direction: column;
+}
+.btns{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.btns input{
+   width: 20%;
+   height: 55px;
+   margin: 5px;
+   border: none;
+  border-radius: 50%;
+background: linear-gradient(145deg, #fdffff, #d4d8db);
+box-shadow:  5px 5px 12px #8e9092,
+             -5px -5px 12px #ffffff;
+}
+.btns input:hover{
+   border-radius: 50%;
+background: linear-gradient(145deg, #d4d8db, #fdffff);
+box-shadow:  5px 5px 12px #bfc2c5,
+             -5px -5px 12px #ffffff;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It is all completed now, just run you website on localhost and you will see the working calculator.&lt;/p&gt;
+&lt;p&gt;That is all the tutorial today, if you are facing any problem, contact me using the comment below or go to &lt;a class=&#34;link&#34; href=&#34;https://cdwblog.github.io/p/about-us/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;contact us&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>QR Code Generator</title>
         <link>https://cdwblog.github.io/p/qr-code-generator/</link>
         <pubDate>Thu, 30 Dec 2021 12:48:38 +0800</pubDate>

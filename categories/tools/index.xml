@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Coding World Blog - CDW Blog</title>
-    <link>https://cdwblog.github.io/post/</link>
-    <description>Recent content in Posts on Coding World Blog - CDW Blog</description>
+    <title>tools on Coding World Blog - CDW Blog</title>
+    <link>https://cdwblog.github.io/categories/tools/</link>
+    <description>Recent content in tools on Coding World Blog - CDW Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Jan 2022 12:48:38 +0800</lastBuildDate><atom:link href="https://cdwblog.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Jan 2022 12:48:38 +0800</lastBuildDate><atom:link href="https://cdwblog.github.io/categories/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Working Calculator </title>
       <link>https://cdwblog.github.io/p/working-calculator/</link>
@@ -27,16 +27,6 @@ Now, let&amp;rsquo;s start the tutorial.Firstly, we need to create two empty fil
       <description>Hello readers, today in this blog you will learn how to create a qr code generator yourself using the html,css (optional) and javascript.
 Now, let&amp;rsquo;s start the tutorial.First,you need to create a html file and this is the html code needed.
 &amp;lt;form onsubmit=&amp;quot;generate();return false;&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;input&amp;quot;&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;qr&amp;quot; name=&amp;quot;&amp;quot; placeholder=&amp;quot;Enter a values&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;div id=&amp;quot;qrResult&amp;quot; style=&amp;quot;height: 100px;width: 100px&amp;quot; class=&amp;quot;result&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;br /&amp;gt; &amp;lt;br /&amp;gt; &amp;lt;br /&amp;gt; &amp;lt;button type=&amp;quot;submit&amp;quot; onclick=&amp;quot;generate()&amp;quot; class=&amp;quot;btn&amp;quot;&amp;gt;Generate&amp;lt;/button&amp;gt; Secondly, add this js code in the ** html ** extension file also.</description>
-    </item>
-    
-    <item>
-      <title>About Us</title>
-      <link>https://cdwblog.github.io/p/about-us/</link>
-      <pubDate>Wed, 29 Dec 2021 16:48:50 +0800</pubDate>
-      
-      <guid>https://cdwblog.github.io/p/about-us/</guid>
-      <description>About Us Hello everyone, Welcome to The Coding World Blog (CDW Blog).
-Coding World Blog is a blog where we will post the articles about the fronted design such as HTML, CSS and JavaScript design. We will also posting some tutorial article about web development, useful tool and etc. In this blog, all the design will be open source and I will sharing the source code directly in the posts.</description>
     </item>
     
   </channel>

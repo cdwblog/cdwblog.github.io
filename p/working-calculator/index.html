@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='A qr code generator using html, css and javascript.'><title>QR Code Generator</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='A working calculator with HTML and CSS'><title>Working Calculator </title>
 
-<link rel='canonical' href='https://cdwblog.github.io/p/qr-code-generator/'>
+<link rel='canonical' href='https://cdwblog.github.io/p/working-calculator/'>
 
-<link rel="stylesheet" href="/scss/style.min.775dbd4fd34fda61c5273b4bc3415f7c9666414fb6c40aab164a7ded4397da98.css"><meta property='og:title' content='QR Code Generator'>
-<meta property='og:description' content='A qr code generator using html, css and javascript.'>
-<meta property='og:url' content='https://cdwblog.github.io/p/qr-code-generator/'>
+<link rel="stylesheet" href="/scss/style.min.775dbd4fd34fda61c5273b4bc3415f7c9666414fb6c40aab164a7ded4397da98.css"><meta property='og:title' content='Working Calculator '>
+<meta property='og:description' content='A working calculator with HTML and CSS'>
+<meta property='og:url' content='https://cdwblog.github.io/p/working-calculator/'>
 <meta property='og:site_name' content='Coding World Blog - CDW Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2021-12-30T12:48:38&#43;08:00'/><meta property='article:modified_time' content='2021-12-30T12:48:38&#43;08:00'/><meta property='og:image' content='https://cdwblog.github.io/post/cover002.png' />
-<meta name="twitter:title" content="QR Code Generator">
-<meta name="twitter:description" content="A qr code generator using html, css and javascript."><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://cdwblog.github.io/post/cover002.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-01-04T12:48:38&#43;08:00'/><meta property='article:modified_time' content='2022-01-04T12:48:38&#43;08:00'/><meta property='og:image' content='https://cdwblog.github.io/post/cover001.png' />
+<meta name="twitter:title" content="Working Calculator ">
+<meta name="twitter:description" content="A working calculator with HTML and CSS"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://cdwblog.github.io/post/cover001.png' />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N65F0S9TZ"></script>
 <script>
 var doNotTrack = false;
@@ -181,9 +181,9 @@ if (!doNotTrack) {
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
-            <a href="/p/qr-code-generator/">
+            <a href="/p/working-calculator/">
                 
-                    <img src="/../post/cover002.png" loading="lazy" alt="Featured image of post QR Code Generator" />
+                    <img src="/../post/cover001.png" loading="lazy" alt="Featured image of post Working Calculator " />
                 
             </a>
         </div>
@@ -201,12 +201,12 @@ if (!doNotTrack) {
     
 
     <h2 class="article-title">
-        <a href="/p/qr-code-generator/">QR Code Generator</a>
+        <a href="/p/working-calculator/">Working Calculator </a>
     </h2>
 
     
     <h3 class="article-subtitle">
-        A qr code generator using html, css and javascript.
+        A working calculator with HTML and CSS
     </h3>
     
 
@@ -223,7 +223,7 @@ if (!doNotTrack) {
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Dec 30, 303012</time>
+                <time class="article-time--published">Jan 04, 4041</time>
             </div>
         
 
@@ -248,101 +248,128 @@ if (!doNotTrack) {
 </header>
 
     <section class="article-content">
-    <p>Hello readers, today in this blog you will learn how to create a qr code generator yourself using the html,css (optional) and javascript.</p>
-<p>Now, let&rsquo;s start the tutorial.First,you need to create a html file and this is the html code needed.</p>
-<pre tabindex="0"><code>&lt;form onsubmit=&quot;generate();return false;&quot;&gt;
-   &lt;div class=&quot;input&quot;&gt;
-      &lt;input type=&quot;text&quot; id=&quot;qr&quot; name=&quot;&quot; placeholder=&quot;Enter a values&quot;&gt;
+    <p>Hello friends, today in this blog you will learn how to make a working calculator with using HTML and CSS only.</p>
+<p>Now, let&rsquo;s start the tutorial.Firstly, we need to create two empty file for the html and css. Copy and paste the following code</p>
+<pre tabindex="0"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+   &lt;meta charset=&quot;UTF-8&quot;&gt;
+   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+   &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+   &lt;title&gt;calculator&lt;/title&gt;
+   &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot; media=&quot;all&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   &lt;div class=&quot;wrapper&quot;&gt;
+      &lt;form action=&quot;&quot; name=&quot;forms&quot;&gt;
+      &lt;input type=&quot;text&quot; name=&quot;answer&quot; class=&quot;output&quot;/&gt;
+    &lt;div class=&quot;btn-container&quot;&gt;
+     &lt;div class=&quot;btns&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;AC&quot; onclick=&quot;forms.answer.value = ''&quot; class=&quot;red&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;DEL&quot; onclick=&quot;forms.answer.value = forms.answer.value.substr(0 , forms.answer.value.length -1)&quot; class=&quot;red&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;%&quot; onclick=&quot;forms.answer.value += '%'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;/&quot; onclick=&quot;forms.answer.value += '/'&quot;&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;btns&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;7&quot; onclick=&quot;forms.answer.value += '7'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;8&quot; onclick=&quot;forms.answer.value += '8'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;9&quot; onclick=&quot;forms.answer.value += '9'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;*&quot; onclick=&quot;forms.answer.value += '*'&quot;&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;btns&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;4&quot; onclick=&quot;forms.answer.value += '4'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;5&quot; onclick=&quot;forms.answer.value += '5'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;6&quot; onclick=&quot;forms.answer.value += '6'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;-&quot; onclick=&quot;forms.answer.value += '-'&quot;&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;btns&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;1&quot; onclick=&quot;forms.answer.value += '1'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;2&quot; onclick=&quot;forms.answer.value += '2'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;3&quot; onclick=&quot;forms.answer.value += '3'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;+&quot; onclick=&quot;forms.answer.value += '+'&quot;&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;btns&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;0&quot;  onclick=&quot;forms.answer.value += '0'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;00&quot; onclick=&quot;forms.answer.value += '00'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;.&quot; onclick=&quot;forms.answer.value += '.'&quot;&gt;
+       &lt;input type=&quot;button&quot; value=&quot;=&quot; onclick=&quot;forms.answer.value = eval(forms.answer.value)&quot;&gt;
+     &lt;/div&gt;
    &lt;/div&gt;
-&lt;/form&gt;
-   &lt;div id=&quot;qrResult&quot; style=&quot;height: 100px;width: 100px&quot; class=&quot;result&quot;&gt;&lt;/div&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-      &lt;button type=&quot;submit&quot; onclick=&quot;generate()&quot; class=&quot;btn&quot;&gt;Generate&lt;/button&gt;
-</code></pre><p>Secondly, add this js code in the ** html ** extension file also.</p>
-<pre tabindex="0"><code>&lt;script type=&quot;text/javascript&quot;&gt;
-   var qrcode=new QRCode(document.getElementById('qrResult'),{
-   width:100,height:100
-}); 
-
-function generate(){
-var message=document.getElementById('qr');
-if(!message.value){
-alert(&quot;Please enter a values! &quot;);
-message.focus();
-return;
-}
-qrcode.makeCode(message.value);
-}
-&lt;/script&gt;
-</code></pre><p>These code is use to judge is the user have enter a value, if it is not any value entered, an alert will called.</p>
-<p>Now,we can add some css to beautify the website (you can skip this step if you don&rsquo;t mind)</p>
-<pre tabindex="0"><code>    *{
+      &lt;/form&gt;
+   &lt;/div&gt;
+   &lt;p&gt;Download source code?&lt;/p&gt;
+   
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>Now, we go to the empty css file the paste the following code</p>
+<pre tabindex="0"><code>*{
    box-sizing: border-box;
-   padding: 0px;
+   margin: 0;
+   padding: 0;
 }
-
 body{
-   text-align: center;
+   background: #7436FF;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
+div.wrapper{
+   background: #FFF;
+   width: 300px;
+   height: 480px;
+   margin-top: 30px;
 
-header{
-   font-size: 28px;
+   border-radius: 15px;
+   position: relative;
 }
-
-div.result{
-   padding-top: 20px;
-   padding-left: 120px;
-}
-
-input{
-   width: 280px;
-   border: none;
-   outline: none;
-   padding-bottom: 2px;
-   padding-left:3px;
-}
-
-div.input{
-   width: 280px;
-   border-bottom: 1px solid #9DA0C0;
-   margin-left: 40px;
-}
-
-.btn{
-   width: 80px;
-   height: 40px;
-   background: none;
-   color: #5765FF;
-   border: 1px solid #5765FF;
-   border-radius: 5px;
-}
-
-.btn:hover{
-   transition: 0.8s;
-   background: #5765FF;
-   color: #fff;
-}
-
-footer{
+.output{
    position: absolute;
-   bottom: 0;
-   left: 0;
-   background: #5765FF;
-   color: #fff;
+   top: 35px;
+   margin-left: 5%;
+   width: 90%;
+   height: 85px;
+   font-size: 35px;
+   padding: 15px;
+   text-align: right;
+   color: #7436FF;
+   outline: none;
+   border: none;
+   border-radius: 10px;
+   background: #ECF0F3;
+   box-shadow: inset 5px 5px 10px #b1b4b6,
+            inset -5px -5px 10px #ffffff;
+}
+.btn-container{
    width: 100%;
-   height: 40px;
-   padding-top: 11px;
+   position: absolute;
+   bottom: 15px;
+   display: flex;
+   flex-direction: column;
 }
-
-#icon{
-   padding-left: 5px;
+.btns{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
 }
-</code></pre><p>Now we are going to add the core of generator, js extension file. For this js file you need to download at below.</p>
-<p>Download js file :
-After downloaded, import the file to your project folder and use <code>&lt;script scr=&quot;qrcode.js&quot;&gt;</code> in the html to link the js file.</p>
-<p>If it didn&rsquo;t went wrong,the qr code generator is done and should be work now.</p>
+.btns input{
+   width: 20%;
+   height: 55px;
+   margin: 5px;
+   border: none;
+  border-radius: 50%;
+background: linear-gradient(145deg, #fdffff, #d4d8db);
+box-shadow:  5px 5px 12px #8e9092,
+             -5px -5px 12px #ffffff;
+}
+.btns input:hover{
+   border-radius: 50%;
+background: linear-gradient(145deg, #d4d8db, #fdffff);
+box-shadow:  5px 5px 12px #bfc2c5,
+             -5px -5px 12px #ffffff;
+}
+</code></pre><p>It is all completed now, just run you website on localhost and you will see the working calculator.</p>
 <p>That is all the tutorial today, if you are facing any problem, contact me using the comment below or go to <a class="link" href="https://cdwblog.github.io/p/about-us/"  target="_blank" rel="noopener"
     >contact us</a></p>
 
@@ -381,18 +408,18 @@ After downloaded, import the file to your project folder and use <code>&lt;scrip
                 
                     
 <article class="has-image">
-    <a href="/p/working-calculator/">
+    <a href="/p/qr-code-generator/">
         
         
             <div class="article-image">
                 
-                    <img src="/../post/cover001.png" loading="lazy" data-key="" data-hash="/../post/cover001.png"/>
+                    <img src="/../post/cover002.png" loading="lazy" data-key="" data-hash="/../post/cover002.png"/>
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">Working Calculator </h2>
+            <h2 class="article-title">QR Code Generator</h2>
         </div>
     </a>
 </article>
