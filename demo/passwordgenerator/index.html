@@ -1,0 +1,89 @@
+<!--made by coding world-->
+<!--visit : https://codingworldweb.blogspot.com/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>PASSWORD GENERATOR --coding tutorial</title>
+<style>
+body{
+   min-height: 100vh;
+   background: #40A9FF;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.wrapper{
+   background: #FFF;
+   text-align: center;
+   border-radius: 15px;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 85%;
+}
+input{
+   width: 75%;
+   height: 45px;
+   outline: none;
+   border-radius: 5px;
+   background: #FFF;
+   border: 1px solid #40A9FF;
+   text-align: center;
+   color: #565666;
+}
+button{
+   width: 75%;
+   height: 45px;
+   border-radius: 5px;
+   background: #0076FF;
+   border: none;
+   color: #FFF;
+}
+button.gen{
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+</style>
+</head>
+<body>
+   <div class="wrapper">
+   <h1>PASSOWORD GENERATOR</h1>
+   <input type="text" name="" placeholder="Create password" id="password" readonly>
+   <button onclick="genPassword()" class="gen">
+      GENERATE
+   </button>
+   <BUTTON onclick="copyPassword()">
+      COPY PASSWORD
+   </button>
+   </div>
+Download Source Code? <a href="https://codingworldweb.blogspot.com/2022/01/password-generator.html?m=1">GO</a>
+
+
+<script type="text/javascript" charset="utf-8">
+   var password=document.getElementById("password");
+
+ function genPassword() {
+    var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var passwordLength = 12;
+    var password = "";
+ for (var i = 0; i <= passwordLength; i++) {
+   var randomNumber = Math.floor(Math.random() * chars.length);
+   password += chars.substring(randomNumber, randomNumber +1);
+  }
+        document.getElementById("password").value = password;
+ }
+
+function copyPassword() {
+  var copyText = document.getElementById("password");
+  copyText.select();
+  document.execCommand("copy");  
+}
+</script>
+</body>
+</html>
