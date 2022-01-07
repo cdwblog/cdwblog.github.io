@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:ital,wght@0,100;0,500;0,600;0,800;0,900;1,500;1,900&family=Ubuntu:ital@1&display=swap');
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Poppins', sans-serif;
+}
+section{
+   min-height: 100vh;
+   width: 100%;
+   background: url(1.jpg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.card{
+   width: 380px;
+   height: 420px;
+   border-radius: 5px;
+   text-align: center;
+   box-shadow:0 16px 16px 0 rgba(0, 0, 0, 0.2);
+   background: rgba(255, 255, 255, 0.5);
+}
+.card h1{
+   padding-top: 20px;
+   padding-bottom: 55px;
+}
+.input-group{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+input{
+   width: 75%;
+   height: 35px;
+   background: #FFF;
+   border: 1px solid #585858;
+   border-radius: 5px;
+   margin-bottom: 15px;
+   padding-left: 5px;
+   outline: none;
+}
+input:focus{
+   border: 1px solid #1877F2;
+}
+button{
+   margin-top: 35px;
+   border: none;
+   background: #FF1B64;
+   color: #FFF;
+   width: 75%;
+   height: 35px;
+   border-radius: 5px;
+}
+button.reg{
+   background: none;
+   color: #FF1B64;
+   border: 2px solid #FF1B64;
+   border-radius: 5px;
+}
+</style>
+</head>
+<body>
+   <section>
+      <div class="card">
+         <h1>LOGIN</h1>
+         <div class="input-group">
+            <input type="text" placeholder="username">
+            <input type="password" placeholder="password">
+            <button>LOGIN</button>
+            <button class="reg">REGISTER</button>
+         </div>
+      </div>
+   </section>
+</body>
+</html>
